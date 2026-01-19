@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+meson setup \
+  -Dprefix=/usr \
+  -Dsysconfdir=/etc \
+  -Dmandir=/usr/share/man \
+  -Dlocalstatedir=/var \
+  build
+
+meson compile -C build
+DESTDIR="$1" meson install -C build

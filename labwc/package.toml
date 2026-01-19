@@ -1,0 +1,12 @@
+[meta]
+version = "0.9.3"
+maintainer = "vaelixd <vaelixd@proton.me>"
+sources = ["https://github.com/labwc/labwc/archive/refs/tags/0.9.3.tar.gz"]
+checksums = ["b3af13d47d9c1dca4a8fcb5f847ec7e2e06858a4d6eee42b2ac14dbe7cc385cd"]
+
+[deps]
+wlroots = "*"
+pango = "*"
+
+[mkdeps]
+gcc = "*"
